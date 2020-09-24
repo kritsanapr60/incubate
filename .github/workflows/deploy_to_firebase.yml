@@ -1,23 +1,3 @@
-# name: CI/CD to Firebase Hosting
-
-# on:
-#   push:
-#     branches: [ 59DeployApp ]
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Build (not production)
-#       run: |
-#         npm install
-#         npm run build
-#     - name: Deploy
-#       run: |
-#         sudo npm install -g firebase-tools
-#         firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
-
 name: CI/CD to Firebase Hosting
 
 # Controls when the action will run. Triggers the workflow on push

@@ -20,7 +20,7 @@ jobs:
       - name: Run Script Build
         run: npm run-script build
       - name: Run Test
-        run: jest
+        run: npm test
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
@@ -46,6 +46,9 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
+
+
+          
 # jobs:
 #   build:
 #     runs-on: ubuntu-latest

@@ -19,11 +19,14 @@ jobs:
         run: npm run build --prod
       - name: Run Script Build
         run: npm run-script build
+      - name: Run Test
+        run: jest
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
           name: dist
           path: dist
+
   deploy:
     name: Deploy
     needs: build
